@@ -16,3 +16,18 @@ else:
 random_number = random.randint(0, upto)
 
 
+while True:
+    user_guess = input("Make a guess: ")
+    if user_guess.isdigit():
+        user_guess = int(user_guess)
+
+    else:
+        print("Type in number.")
+        continue
+
+    if user_guess == random_number:
+        print("-----Correct.-----")
+        break
+    
+    else:
+        print("------Wrong.------")
